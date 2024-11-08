@@ -100,7 +100,17 @@ class ChatGPTFunction:
                 total_tokens = json_data['usage']['total_tokens']
                 message = json_data["choices"][0]["message"]
                 if process_id == 0:
-                    print(f"[process({process_id})]total tokens: {json_data['usage']['total_tokens']}")
+                    print(
+                        f"[process({process_id})]prompt tokens: {json_data['usage']['prompt_tokens']}, "
+                        f"completion tokens: {json_data['usage']['completion_tokens']}"
+                    )
+                    with open("/hri/localdisk/focker/tmp/ToolBench/data/LOG.txt", "a") as log_file:
+                        log_file.write(
+                            (
+                                f"[process({process_id})]prompt tokens: {json_data['usage']['prompt_tokens']}, "
+                                f"completion tokens: {json_data['usage']['completion_tokens']}\n"
+                            )
+                        )
 
                 if "function_call" in message.keys() and "." in message["function_call"]["name"]:
                     message["function_call"]["name"] = message["function_call"]["name"].split(".")[-1]

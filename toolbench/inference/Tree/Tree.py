@@ -88,13 +88,18 @@ class tree_node:
     def print(self,process_id = 0):
         if process_id != 0:
             return
+        # only print relevant parts
+        if self.node_type != "Action Input":
+            return
+        with open("/hri/localdisk/focker/tmp/ToolBench/data/LOG.txt", "a") as log_file:
+            log_file.write(f"{self.node_type}: {self.description}\n")
         color_converter = {"Thought":"red", "Action": "blue", "Action Input": "cyan","Final Answer": "green","Reflection":"blue"}
         print(colored(f"{self.node_type}: {self.description}",color = color_converter[self.node_type]))
-        if self.observation != "":
-            if len(self.observation) < 1536:
-                print(colored(f"Observation: {self.observation}",color="yellow"))
-            else:
-                print(colored(f"Observation: {self.observation[:1536]}......(len={len(self.observation)})",color="yellow"))
+        # if self.observation != "":
+        #     if len(self.observation) < 1536:
+        #         print(colored(f"Observation: {self.observation}",color="yellow"))
+        #     else:
+        #         print(colored(f"Observation: {self.observation[:1536]}......(len={len(self.observation)})",color="yellow"))
 
 
     @classmethod
