@@ -1,0 +1,1829 @@
+{
+    "tool_description": "Custom math functions.",
+    "tool_name": "custom math",
+    "title": "custom math",
+    "api_list": [
+        {
+            "name": "absolute",
+            "url": "",
+            "description": "Find the absolute value of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "number",
+                    "description": "The number to find the absolute value of.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "add",
+            "url": "",
+            "description": "Add two numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "The first number.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The second number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_circle",
+            "url": "",
+            "description": "Calculate the area of a circle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the circle.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_of_ellipse",
+            "url": "",
+            "description": "Calculate the area of an ellipse.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "major_axis",
+                    "type": "number",
+                    "description": "The length of the major axis.",
+                    "default": null
+                },
+                {
+                    "name": "minor_axis",
+                    "type": "number",
+                    "description": "The length of the minor axis.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_of_hexagon",
+            "url": "",
+            "description": "Calculate the area of a regular hexagon.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "side",
+                    "type": "number",
+                    "description": "The length of a side of the hexagon.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_of_rhombus",
+            "url": "",
+            "description": "Calculate the area of a rhombus given its diagonals.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "diagonal1",
+                    "type": "number",
+                    "description": "The length of the first diagonal.",
+                    "default": null
+                },
+                {
+                    "name": "diagonal2",
+                    "type": "number",
+                    "description": "The length of the second diagonal.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_parallelogram",
+            "url": "",
+            "description": "Calculate the area of a parallelogram.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "number",
+                    "description": "The length of the base of the parallelogram.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the parallelogram.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_rectangle",
+            "url": "",
+            "description": "Calculate the area of a rectangle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "length",
+                    "type": "number",
+                    "description": "The length of the rectangle.",
+                    "default": null
+                },
+                {
+                    "name": "width",
+                    "type": "number",
+                    "description": "The width of the rectangle.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_square",
+            "url": "",
+            "description": "Calculate the area of a square.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "side_length",
+                    "type": "number",
+                    "description": "The length of a side of the square.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "area_triangle",
+            "url": "",
+            "description": "Calculate the area of a triangle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "number",
+                    "description": "The base of the triangle.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the triangle.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "binomial_coefficient",
+            "url": "",
+            "description": "Calculate the binomial coefficient \"n choose k\".",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of items.",
+                    "default": null
+                },
+                {
+                    "name": "k",
+                    "type": "integer",
+                    "description": "The number of items to choose.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "catalan_number",
+            "url": "",
+            "description": "Calculate the nth Catalan number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The position in the Catalan sequence.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "circumference_circle",
+            "url": "",
+            "description": "Calculate the circumference of a circle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the circle.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "coefficient_of_variation",
+            "url": "",
+            "description": "Calculate the coefficient of variation of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "compound_interest",
+            "url": "",
+            "description": "Calculate compound interest.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "principal",
+                    "type": "number",
+                    "description": "The initial amount of money.",
+                    "default": null
+                },
+                {
+                    "name": "rate",
+                    "type": "number",
+                    "description": "The annual interest rate (as a decimal).",
+                    "default": null
+                },
+                {
+                    "name": "times_compounded",
+                    "type": "integer",
+                    "description": "The number of times the interest is compounded per year.",
+                    "default": null
+                },
+                {
+                    "name": "years",
+                    "type": "integer",
+                    "description": "The number of years the money is invested or borrowed for.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "convert_celsius_to_fahrenheit",
+            "url": "",
+            "description": "Convert temperature from Celsius to Fahrenheit.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "celsius",
+                    "type": "number",
+                    "description": "The temperature in Celsius.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "convert_fahrenheit_to_celsius",
+            "url": "",
+            "description": "Convert temperature from Fahrenheit to Celsius.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "fahrenheit",
+                    "type": "number",
+                    "description": "The temperature in Fahrenheit.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "cosine",
+            "url": "",
+            "description": "Calculate the cosine of an angle in radians.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "angle",
+                    "type": "number",
+                    "description": "The angle in radians.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "degrees_to_radians",
+            "url": "",
+            "description": "Convert degrees to radians.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "degrees",
+                    "type": "number",
+                    "description": "The angle in degrees.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "digital_root",
+            "url": "",
+            "description": "Calculate the digital root of a number, which is the iterative process of summing the digits of a number,\n    until a single-digit number is reached.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to find the digital root of.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "divide",
+            "url": "",
+            "description": "Divide two numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "The dividend.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The divisor.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "euler_number_approximation",
+            "url": "",
+            "description": "Approximate Euler's number using a series expansion.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "iterations",
+                    "type": "integer",
+                    "description": "The number of terms to include in the approximation.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "euler_totient_function",
+            "url": "",
+            "description": "Calculate Euler's Totient Function for a given n, which is the count of numbers less than n that are relatively prime to n.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The input number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "factorial",
+            "url": "",
+            "description": "Calculate the factorial of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to find the factorial of.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "factorial_recursive",
+            "url": "",
+            "description": "Calculate the factorial of a number using recursion.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "fibonacci_recursive",
+            "url": "",
+            "description": "Calculate the nth Fibonacci number using recursion.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The position in the Fibonacci sequence.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "fibonacci_sequence",
+            "url": "",
+            "description": "Generate a list of Fibonacci numbers up to the nth number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The length of the Fibonacci sequence to generate.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "gcd",
+            "url": "",
+            "description": "Compute the greatest common divisor of a and b.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "integer",
+                    "description": "The first number.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "integer",
+                    "description": "The second number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "gcd_extended",
+            "url": "",
+            "description": "Extended Euclidean Algorithm. It returns the coefficients of Bezout's identity and the greatest common divisor.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "integer",
+                    "description": "First number.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "integer",
+                    "description": "Second number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "geometric_mean",
+            "url": "",
+            "description": "Calculate the geometric mean of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "greatest_difference",
+            "url": "",
+            "description": "Find the greatest difference between any two numbers in a list.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "harmonic_mean",
+            "url": "",
+            "description": "Calculate the harmonic mean of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "hypotenuse",
+            "url": "",
+            "description": "Calculate the hypotenuse of a right-angled triangle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "One side of the triangle.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The other side of the triangle.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "interquartile_range",
+            "url": "",
+            "description": "Calculate the interquartile range of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of sorted numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_armstrong_number",
+            "url": "",
+            "description": "Check if a number is an Armstrong number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_even",
+            "url": "",
+            "description": "Check if a number is even.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_odd",
+            "url": "",
+            "description": "Check if a number is odd.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_palindrome",
+            "url": "",
+            "description": "Check if a number is a palindrome.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_perfect_number",
+            "url": "",
+            "description": "Check if a number is a perfect number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_prime",
+            "url": "",
+            "description": "Check if a number is prime.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "is_prime_number",
+            "url": "",
+            "description": "Determine if a number is a prime number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number to check.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "lcm",
+            "url": "",
+            "description": "Compute the least common multiple of a and b.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "integer",
+                    "description": "The first number.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "integer",
+                    "description": "The second number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "lcm_extended",
+            "url": "",
+            "description": "Calculate the Least Common Multiple (LCM) based on the GCD.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "integer",
+                    "description": "First number.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "integer",
+                    "description": "Second number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "log",
+            "url": "",
+            "description": "Calculate the logarithm of a number with given base.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "number",
+                    "description": "The number to calculate the logarithm for.",
+                    "default": null
+                },
+                {
+                    "name": "base",
+                    "type": "number",
+                    "description": "The base of the logarithm. Defaults to Euler's number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "mean_absolute_deviation",
+            "url": "",
+            "description": "Calculate the mean absolute deviation of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "median",
+            "url": "",
+            "description": "Calculate the median of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of sorted numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "mode",
+            "url": "",
+            "description": "Calculate the mode(s) of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "modulus",
+            "url": "",
+            "description": "Find the modulus of two numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "The dividend.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The divisor.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "multiply",
+            "url": "",
+            "description": "Multiply two numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "The first multiplicand.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The second multiplicand.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "nth_prime",
+            "url": "",
+            "description": "Find the nth prime number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The nth position.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "nth_root",
+            "url": "",
+            "description": "Calculate the nth root of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "number",
+                    "description": "The number to find the root of.",
+                    "default": null
+                },
+                {
+                    "name": "root",
+                    "type": "number",
+                    "description": "The degree of the root.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "nth_term_arithmetic_sequence",
+            "url": "",
+            "description": "Calculate the nth term of an arithmetic sequence.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The term number to find.",
+                    "default": null
+                },
+                {
+                    "name": "a1",
+                    "type": "number",
+                    "description": "The first term of the sequence.",
+                    "default": null
+                },
+                {
+                    "name": "d",
+                    "type": "number",
+                    "description": "The common difference between terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "nth_term_geometric_sequence",
+            "url": "",
+            "description": "Calculate the nth term of a geometric sequence.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The term number to find.",
+                    "default": null
+                },
+                {
+                    "name": "a1",
+                    "type": "number",
+                    "description": "The first term of the sequence.",
+                    "default": null
+                },
+                {
+                    "name": "r",
+                    "type": "number",
+                    "description": "The common ratio between terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "number_of_divisors",
+            "url": "",
+            "description": "Calculate the number of divisors of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "pascals_triangle_row",
+            "url": "",
+            "description": "Generate the nth row of Pascal's triangle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The row number to generate.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "perimeter_of_ellipse",
+            "url": "",
+            "description": "Approximate the perimeter of an ellipse (Ramanujan's first approximation).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "major_axis",
+                    "type": "number",
+                    "description": "The length of the major axis.",
+                    "default": null
+                },
+                {
+                    "name": "minor_axis",
+                    "type": "number",
+                    "description": "The length of the minor axis.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "perimeter_of_hexagon",
+            "url": "",
+            "description": "Calculate the perimeter of a regular hexagon.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "side",
+                    "type": "number",
+                    "description": "The length of a side of the hexagon.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "perimeter_rectangle",
+            "url": "",
+            "description": "Calculate the perimeter of a rectangle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "length",
+                    "type": "number",
+                    "description": "The length of the rectangle.",
+                    "default": null
+                },
+                {
+                    "name": "width",
+                    "type": "number",
+                    "description": "The width of the rectangle.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "perimeter_square",
+            "url": "",
+            "description": "Calculate the perimeter of a square.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "side_length",
+                    "type": "number",
+                    "description": "The length of a side of the square.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "perimeter_triangle",
+            "url": "",
+            "description": "Calculate the perimeter of a triange.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sides",
+                    "type": "array",
+                    "description": "List of the lengths of the triangle's sides.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "power",
+            "url": "",
+            "description": "Raise a number to the power of another.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "number",
+                    "description": "The base number.",
+                    "default": null
+                },
+                {
+                    "name": "exponent",
+                    "type": "number",
+                    "description": "The exponent.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "prime_factors",
+            "url": "",
+            "description": "Find all prime factors of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number to find the prime factors of.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "prime_sieve",
+            "url": "",
+            "description": "Sieve of Eratosthenes: Find all prime numbers up to n.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The upper limit to find primes within.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "primes_up_to_n",
+            "url": "",
+            "description": "Generate a list of prime numbers up to a given number n.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The upper limit of the prime number search.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "product_of_numbers",
+            "url": "",
+            "description": "Calculate the product of all numbers in a list.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "pythagorean_triples",
+            "url": "",
+            "description": "Generate all Pythagorean triples up to a maximum value n.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The maximum value of the hypotenuse.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "quadratic_formula",
+            "url": "",
+            "description": "Solve a quadratic equation using the quadratic formula.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "The coefficient of x^2.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The coefficient of x.",
+                    "default": null
+                },
+                {
+                    "name": "c",
+                    "type": "number",
+                    "description": "The constant term.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "radians_to_degrees",
+            "url": "",
+            "description": "Convert radians to degrees.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radians",
+                    "type": "number",
+                    "description": "The angle in radians.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "range_of_numbers",
+            "url": "",
+            "description": "Calculate the range of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "simple_interest",
+            "url": "",
+            "description": "Calculate simple interest.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "principal",
+                    "type": "number",
+                    "description": "The principal amount.",
+                    "default": null
+                },
+                {
+                    "name": "rate",
+                    "type": "number",
+                    "description": "The annual interest rate (as a decimal).",
+                    "default": null
+                },
+                {
+                    "name": "years",
+                    "type": "integer",
+                    "description": "The time in years.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sine",
+            "url": "",
+            "description": "Calculate the sine of an angle in radians.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "angle",
+                    "type": "number",
+                    "description": "The angle in radians.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sqrt",
+            "url": "",
+            "description": "Calculate the square root of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "number",
+                    "description": "The number to find the square root of.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "standard_deviation",
+            "url": "",
+            "description": "Calculate the standard deviation of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "subtract",
+            "url": "",
+            "description": "Subtract two numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "The number to be subtracted from.",
+                    "default": null
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "The number to subtract.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_arithmetic_sequence",
+            "url": "",
+            "description": "Calculate the sum of the first n terms of an arithmetic sequence.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                },
+                {
+                    "name": "a1",
+                    "type": "number",
+                    "description": "The first term of the sequence.",
+                    "default": null
+                },
+                {
+                    "name": "d",
+                    "type": "number",
+                    "description": "The common difference between terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_cubes",
+            "url": "",
+            "description": "Calculate the sum of the cubes of the first n natural numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_digits",
+            "url": "",
+            "description": "Calculate the sum of the digits of a number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "The number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_divisors",
+            "url": "",
+            "description": "Calculate the sum of all divisors of a number, including itself.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_even_numbers",
+            "url": "",
+            "description": "Calculate the sum of all even numbers in a list.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "integer"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_geometric_sequence",
+            "url": "",
+            "description": "Calculate the sum of the first n terms of a geometric sequence.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                },
+                {
+                    "name": "a1",
+                    "type": "number",
+                    "description": "The first term of the sequence.",
+                    "default": null
+                },
+                {
+                    "name": "r",
+                    "type": "number",
+                    "description": "The common ratio between terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_n_cubes",
+            "url": "",
+            "description": "Calculate the sum of the cubes of the first n natural numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_n_squares",
+            "url": "",
+            "description": "Calculate the sum of the squares of the first n natural numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_natural_numbers",
+            "url": "",
+            "description": "Calculate the sum of the first n natural numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_odd_numbers",
+            "url": "",
+            "description": "Calculate the sum of all odd numbers in a list.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "integer"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "sum_of_squares",
+            "url": "",
+            "description": "Calculate the sum of the squares of the first n natural numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "The number of terms.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "surface_area_cube",
+            "url": "",
+            "description": "Calculate the surface area of a cube.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "side_length",
+                    "type": "number",
+                    "description": "The length of a side of the cube.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "surface_area_of_cylinder",
+            "url": "",
+            "description": "Calculate the surface area of a cylinder.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the cylinder's base.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the cylinder.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "surface_area_of_prism",
+            "url": "",
+            "description": "Calculate the surface area of a prism.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base_perimeter",
+                    "type": "number",
+                    "description": "The perimeter of the base of the prism.",
+                    "default": null
+                },
+                {
+                    "name": "base_area",
+                    "type": "number",
+                    "description": "The area of the base.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the prism.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "surface_area_of_pyramid",
+            "url": "",
+            "description": "Calculate the surface area of a pyramid.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base_area",
+                    "type": "number",
+                    "description": "The area of the base of the pyramid.",
+                    "default": null
+                },
+                {
+                    "name": "lateral_area",
+                    "type": "number",
+                    "description": "The total area of the lateral faces.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "surface_area_of_torus",
+            "url": "",
+            "description": "Calculate the surface area of a torus.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "major_radius",
+                    "type": "number",
+                    "description": "The major radius of the torus.",
+                    "default": null
+                },
+                {
+                    "name": "minor_radius",
+                    "type": "number",
+                    "description": "The minor radius of the torus.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "surface_area_sphere",
+            "url": "",
+            "description": "Calculate the surface area of a sphere.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the sphere.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "tangent",
+            "url": "",
+            "description": "Calculate the tangent of an angle in radians.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "angle",
+                    "type": "number",
+                    "description": "The angle in radians.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "variance",
+            "url": "",
+            "description": "Calculate the variance of a list of numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "array",
+                    "description": "A list of numbers.",
+                    "default": null,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_cone",
+            "url": "",
+            "description": "Calculate the volume of a cone.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the cone's base.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the cone.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_cube",
+            "url": "",
+            "description": "Calculate the volume of a cube.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "side_length",
+                    "type": "number",
+                    "description": "The length of a side of the cube.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_cylinder",
+            "url": "",
+            "description": "Calculate the volume of a cylinder.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the cylinder's base.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the cylinder.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_of_prism",
+            "url": "",
+            "description": "Calculate the volume of a prism.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base_area",
+                    "type": "number",
+                    "description": "The area of the base of the prism.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the prism.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_of_pyramid",
+            "url": "",
+            "description": "Calculate the volume of a pyramid.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base_area",
+                    "type": "number",
+                    "description": "The area of the base of the pyramid.",
+                    "default": null
+                },
+                {
+                    "name": "height",
+                    "type": "number",
+                    "description": "The height of the pyramid from the base to the apex.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_of_torus",
+            "url": "",
+            "description": "Calculate the volume of a torus.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "major_radius",
+                    "type": "number",
+                    "description": "The major radius of the torus (distance from the center of the tube to the center of the torus).",
+                    "default": null
+                },
+                {
+                    "name": "minor_radius",
+                    "type": "number",
+                    "description": "The minor radius of the torus (radius of the tube).",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "volume_sphere",
+            "url": "",
+            "description": "Calculate the volume of a sphere.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "number",
+                    "description": "The radius of the sphere.",
+                    "default": null
+                }
+            ],
+            "optional_parameters": []
+        }
+    ],
+    "standardized_name": "custom_math"
+}

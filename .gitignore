@@ -9,6 +9,7 @@ data.zip
 __MACOSX/
 
 run.bash
+./runner.sh
 
 *.pyc
 **/__pycache__
